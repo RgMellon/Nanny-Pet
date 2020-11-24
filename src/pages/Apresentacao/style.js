@@ -3,7 +3,7 @@ import styled from "styled-components/native";
 export const Container = styled.SafeAreaView`
   flex: 1;
   background: #fff;
-  padding: 20px;
+  /* padding: 20px; */
 
   align-items: center;
   /* justify-content: space-around; */
@@ -46,7 +46,7 @@ export const ButtonNext = styled.TouchableOpacity`
   height: 50px;
   background: #ffc249;
 
-  margin-top: 200px;
+  margin-top: 180px;
   justify-content: center;
   align-items: center;
   border-radius: 8px;
