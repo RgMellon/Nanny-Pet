@@ -7,7 +7,7 @@ import dog from "../../assets/dog.png";
 
 const Apresentacao = () => {
   function handleNext() {
-    Alert.aler("oi");
+    Alert.alert("oi");
   }
 
   return (

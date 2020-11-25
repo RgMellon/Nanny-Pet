@@ -7,7 +7,7 @@ import Header from "../../components/Header";
 
 const Cadastro = () => {
   function handleNext() {
-    Alert.aler("Cadastrado");
+    Alert.alert("Cadastrado");
   }
 
   return (
