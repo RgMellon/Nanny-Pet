@@ -19,7 +19,9 @@ const Login = () => {
       <S.Title> Fazer Login</S.Title>
 
       <S.TextInput placeholder="E-mail" />
+
       <S.TextInput placeholder="Sua senha" secureTextEntry={true} />
+
       <S.ButtonLogin onPress={handleNext}>
         <S.ButtonLoginText> Login </S.ButtonLoginText>
       </S.ButtonLogin>
