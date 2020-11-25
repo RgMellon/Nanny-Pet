@@ -2,7 +2,7 @@ import React from "react";
 
 import * as S from "./styles";
 
-import dog from "../../assets/dog.png";
+import Header from "../../components/Header";
 
 const Login = () => {
   function handleNext() {
@@ -11,9 +11,7 @@ const Login = () => {
 
   return (
     <S.Container>
-      <S.ContentImage>
-        <S.Image source={dog} />
-      </S.ContentImage>
+      <Header />
 
       <S.Detail />
       <S.Title> Fazer Login</S.Title>

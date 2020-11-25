@@ -3,7 +3,7 @@ import { Alert, TextInput } from "react-native";
 
 import * as S from "./styles";
 
-import dog from "../../assets/dog.png";
+import Header from "../../components/Header";
 
 const Cadastro = () => {
   function handleNext() {
@@ -12,9 +12,7 @@ const Cadastro = () => {
 
   return (
     <S.Container>
-      <S.ContentImage>
-        <S.Image source={dog} />
-      </S.ContentImage>
+      <Header />
 
       <S.Detail />
 
