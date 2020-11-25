@@ -65,23 +65,31 @@ export const Detail = styled.View`
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
 `;
+
 export const ButtonPhoto = styled.TouchableOpacity`
-border-width:1px;
-border-color:rgba(0,0,0,0.2);
-align-items:center;
-justify-content:center;
-width:100px;
-height:100px;
-background-color:#fff;
-border-radius:100px;   
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0.2);
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 100px;
+  margin-top: 20px;
 `;
+
 export const TextSobre = styled.TextInput`
-  height: 80px;
   width: 320px;
+  height: 80px;
   border-radius: 8px;
   margin-top: 50px;
   padding: 10px;
   border-width: 1px;
   border-color: #d6d6d6;
-    
+`;
+
+export const Name = styled.Text`
+  color: #fff;
+  font-size: 17px;
+  font-weight: bold;
 `;
