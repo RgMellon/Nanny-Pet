@@ -48,6 +48,7 @@ export const TextInput = styled.TextInput`
   border-width: 1px;
   margin-top: 50px;
 `;
+
 export const ButtonLogin = styled.TouchableOpacity`
   width: 250px;
   height: 50px;

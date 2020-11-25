@@ -21,7 +21,6 @@ export const Image = styled.Image`
 export const Content = styled.View`
   padding: 20px;
   align-items: center;
-  /* background: red; */
 `;
 
 export const Title = styled.Text`
