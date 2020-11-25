@@ -1,11 +1,29 @@
 import styled from "styled-components/native";
 
-export const Container = styled.ScrollView``;
+export const Container = styled.ScrollView`
+  flex: 1;
+`;
 
-export const CategoryCard = styled.View``;
+export const HeaderHome = styled.View`
+  width: 100%;
+  background: #c6d3d5;
+  height: 200px;
 
-export const ContentImageCategory = styled.View``;
+  justify-content: center;
+  align-items: center;
+`;
 
-export const ImageCategory = styled.Image``;
+export const Image = styled.Image`
+  width: 30%;
+  height: 100px;
+`;
 
-export const Title = styled.Text``;
+export const Message = styled.Text`
+  color: #fff;
+  font-weight: bold;
+  margin-top: 30px;
+`;
+
+export const Content = styled.View`
+  padding: 20px;
+`;
