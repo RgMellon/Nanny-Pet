@@ -10,9 +10,5 @@ import CadAnfi from "./src/pages/CadAnfi";
 import CadPet from "./src/pages/CadPet";
 
 export default function App() {
-<<<<<<< HEAD
   return <CadAnfi />;
-=======
-  return <Home />;
->>>>>>> 7849271488b46b899e155dfdc2eb03c3931e433e
 }

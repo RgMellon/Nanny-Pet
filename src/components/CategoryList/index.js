@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 
 import * as S from "./styles";
-import trela from "./trela.png";
-import cao from "./cao.png";
-import canil from "./canil.png";
+
+import trela from "../../assets/trela.png";
+import cao from "../../assets/cao.png";
+import canil from "../../assets/canil.png";
 
 const CategoryList = () => {
   const [categories, setCategories] = useState([
