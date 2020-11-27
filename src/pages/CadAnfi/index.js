@@ -7,7 +7,7 @@ const CadAnfi = () => {
   function handleNext() {
     Alert.alert("Salvo");
   }
-
+ 
   return (
     <S.Container>
       <S.ContentImage>

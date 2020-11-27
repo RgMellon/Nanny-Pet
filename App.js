@@ -7,7 +7,8 @@ import Cadastro from "./src/pages/Cadastro";
 import PerfilUser from "./src/pages/PerfilUser";
 import Home from "./src/pages/Home";
 import CadAnfi from "./src/pages/CadAnfi";
+import CadPet from "./src/pages/CadPet";
 
 export default function App() {
-  return <PerfilUser />;
+  return <Home />;
 }
