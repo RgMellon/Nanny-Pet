@@ -9,7 +9,6 @@ export const ContentImage = styled.View`
   width: 100%;
   height: 200px;
   background: #c6d3d5;
-
   justify-content: center;
   align-items: center;
 `;
@@ -20,7 +19,6 @@ export const CircleImage = styled.TouchableOpacity`
   background: #fff;
   border-radius: 60px;
   margin-top: 15px;
-
   justify-content: center;
   align-items: center;
 `;
@@ -48,10 +46,8 @@ export const MenuItem = styled.TouchableOpacity`
   border-color: #999999;
   margin-top: 40px;
   padding-left: 10px;
-
   flex-direction: row;
   align-items: center;
-
   justify-content: space-between;
 `;
 

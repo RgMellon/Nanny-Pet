@@ -1,6 +1,6 @@
 import React from "react";
-import { Alert, TextInput, TouchableOpacity, Text } from "react-native";
-import { MaterialIcons } from "@expo/vector-icons";
+import { Alert, TextInput, TouchableOpacity, Text, ScrollView } from "react-native";
+import { MaterialIcons, FontAwesome5, MaterialCommunityIcons, Ionicons } from "@expo/vector-icons";
 import * as S from "./styles";
 
 const CadAnfi = () => {
@@ -9,6 +9,7 @@ const CadAnfi = () => {
   }
 
   return (
+    <ScrollView>
     <S.Container>
       <S.ContentImage>
         <S.ButtonPhoto>
@@ -26,13 +27,29 @@ const CadAnfi = () => {
         <S.TextSobre
           multiline={true}
           numberOfLines={8}
-          placeholder={"Um pouco sobre você"}
-        />
-        <S.ButtonNext onPress={handleNext}>
+          placeholder={"Um pouco sobre você"}/>
+        
+        <S.Text>Escolha o serviço a oferecer</S.Text>       
+        
+        
+        <S.MenuItem>          
+          <Ionicons name="md-walk" size={24} color="black" />
+          <S.TextItem>Passeio</S.TextItem>
+          <MaterialCommunityIcons name="dog" size={24} color="black" />
+          <S.TextItem>Pet Sitter</S.TextItem>        
+        </S.MenuItem>        
+        <S.MenuItem2>
+          <FontAwesome5 solid name="home" size={24} color="black" />
+          <S.TextItem>Hospedagem</S.TextItem>
+        </S.MenuItem2>  
+  
+       <S.ButtonNext onPress={handleNext}>
           <S.ButtonNextText> Salvar </S.ButtonNextText>
-        </S.ButtonNext>
-      </S.Content>
+       </S.ButtonNext>
+       </S.Content>
+      
     </S.Container>
+    </ScrollView>
   );
 };
 

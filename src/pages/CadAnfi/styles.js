@@ -93,3 +93,27 @@ export const Name = styled.Text`
   font-size: 17px;
   font-weight: bold;
 `;
+export const MenuItem = styled.View`
+  width: 320px;
+  
+  margin-top: 40px; 
+  flex-direction: row;
+  justify-content: space-around;
+`;
+export const Text = styled.Text`
+margin-top: 50px;
+`;
+export const TextItem = styled.Text`
+  font-size: 17px;
+  margin-left: 10px; 
+  flex-start
+`;
+export const MenuItem2 = styled.View`
+width: 320px;
+  
+margin-top: 40px; 
+
+flex-direction: row;
+justify-content: center;
+
+`;

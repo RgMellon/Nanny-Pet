@@ -9,5 +9,5 @@ import Home from "./src/pages/Home";
 import CadAnfi from "./src/pages/CadAnfi";
 
 export default function App() {
-  return <PerfilUser />;
+  return <CadAnfi />;
 }
