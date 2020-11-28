@@ -9,12 +9,10 @@ const Login = () => {
   const navigation = useNavigation();
 
   function handleNext() {
-    Alert.aler("oi");
+    navigation.navigate("HomeTabNavigator");
   }
 
-  function handleRedirectToRegister() {
-    navigation.navigate("Cadastro");
-  }
+  function handleRedirectToRegister() {}
 
   return (
     <S.Container>

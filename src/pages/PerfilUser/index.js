@@ -1,10 +1,13 @@
 import React from "react";
 
+import { useNavigation } from "@react-navigation/native";
 import { MaterialIcons, FontAwesome5 } from "@expo/vector-icons";
 
 import * as S from "./styles";
 
 const PerfilUser = () => {
+  const navigation = useNavigation();
+
   return (
     <S.Container>
       <S.ContentImage>
@@ -17,11 +20,15 @@ const PerfilUser = () => {
       <S.Detail />
 
       <S.Content>
-        <S.MenuItem>
+        <S.MenuItem
+          onPress={() => {
+            navigation.navigate("CadAnfi");
+          }}
+        >
           <FontAwesome5 solid name="paw" size={24} color="#999" />
 
           <S.Info>
-            <S.Text>Me torna anfitrião</S.Text>
+            <S.Text>Me tornar anfitrião</S.Text>
             <S.Description> Faça parte da comunidade </S.Description>
           </S.Info>
 
