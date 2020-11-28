@@ -11,5 +11,5 @@ import CadPet from "./src/pages/CadPet";
 import PerfilAnfi from "./src/pages/PerfilAnfi"
 
 export default function App() {
-  return <PerfilAnfi />;
+  return <CadAnfi />;
 }

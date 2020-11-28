@@ -5,6 +5,10 @@ export const Container = styled.ScrollView`
   background: #fff;
 `;
 
+export const Wrapper = styled.View`
+  padding: 20px;
+`;
+
 export const ContentImage = styled.View`
   background: #c6d3d5;
   width: 100%;
@@ -19,7 +23,6 @@ export const Image = styled.Image`
 `;
 
 export const Content = styled.View`
-  padding: 20px;
   align-items: center;
 `;
 
@@ -31,21 +34,28 @@ export const Title = styled.Text`
 `;
 
 export const TextInput = styled.TextInput`
-  height: 40px;
-  width: 320px;
+  height: 50px;
+  width: 100%;
   border-radius: 8px;
   margin-top: 50px;
+
   padding: 10px;
   border-width: 1px;
   border-color: #d6d6d6;
+`;
+
+export const ContainerButton = styled.View`
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 20px;
+
+  align-items: center;
 `;
 
 export const ButtonNext = styled.TouchableOpacity`
   width: 250px;
   height: 50px;
   background: #ffc249;
-
-  margin-top: 80px;
   justify-content: center;
   align-items: center;
   border-radius: 8px;
@@ -79,7 +89,7 @@ export const ButtonPhoto = styled.TouchableOpacity`
 `;
 
 export const TextSobre = styled.TextInput`
-  width: 320px;
+  width: 100%;
   height: 80px;
   border-radius: 8px;
   margin-top: 50px;
@@ -93,27 +103,54 @@ export const Name = styled.Text`
   font-size: 17px;
   font-weight: bold;
 `;
-export const MenuItem = styled.View`
-  width: 320px;
-  
-  margin-top: 40px; 
+
+export const ContainerMenu = styled.View`
+  margin-top: 10px;
   flex-direction: row;
-  justify-content: space-around;
+  flex-wrap: wrap;
 `;
+
 export const Text = styled.Text`
-margin-top: 50px;
+  color: #999999;
+  margin-top: 20px;
+  font-weight: bold;
 `;
+
 export const TextItem = styled.Text`
   font-size: 17px;
-  margin-left: 10px; 
-  flex-start
+  margin-left: 10px;
 `;
-export const MenuItem2 = styled.View`
-width: 320px;
-  
-margin-top: 40px; 
 
-flex-direction: row;
-justify-content: center;
+export const Hr = styled.View`
+  height: 0.5px;
+  width: 100%;
+  background: #707070;
+  margin-top: 30px;
+`;
 
+export const IconSercive = styled.Image`
+  width: 30px;
+  height: 40px;
+`;
+
+export const Service = styled.TouchableOpacity`
+  width: 46%;
+  border-radius: 6px;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #d6d6d6;
+  margin-top: 20px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const BackgroundImage = styled.View`
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background: #ffbd10;
+
+  justify-content: center;
+  align-items: center;
 `;

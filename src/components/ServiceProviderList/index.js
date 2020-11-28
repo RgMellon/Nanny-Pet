@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Text } from "react-native";
+
 import { FontAwesome5 } from "@expo/vector-icons";
 
 import * as S from "./styles";

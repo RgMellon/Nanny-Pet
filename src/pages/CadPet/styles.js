@@ -8,7 +8,7 @@ export const Container = styled.ScrollView`
 export const ContentImage = styled.View`
   background: #c6d3d5;
   width: 100%;
-  height: 200px;
+  height: 250px;
   justify-content: center;
   align-items: center;
 `;
@@ -31,8 +31,8 @@ export const Title = styled.Text`
 `;
 
 export const TextInput = styled.TextInput`
-  height: 40px;
-  width: 320px;
+  height: 50px;
+  width: 100%;
   border-radius: 8px;
   margin-top: 50px;
   padding: 10px;
