@@ -11,7 +11,7 @@ export const ListProviderTitle = styled.Text`
   margin-bottom: 20px;
 `;
 
-export const Card = styled.View`
+export const Card = styled.TouchableOpacity`
   width: 100%;
   /* height: 100px; */
   padding: 20px;

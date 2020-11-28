@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 
+import { useNavigation } from "@react-navigation/native";
 import { FontAwesome5 } from "@expo/vector-icons";
 
 import * as S from "./styles";
 
 const ServiceProviderList = () => {
+  const navigation = useNavigation();
+
   const [providerList, setProviderList] = useState([
     {
       name: "Moana Maluca",
@@ -48,7 +51,11 @@ const ServiceProviderList = () => {
         data={providerList}
         keyExtractor={(serviceProvider) => serviceProvider.name}
         renderItem={({ item: serviceProvider }) => (
-          <S.Card>
+          <S.Card
+            onPress={() => {
+              navigation.navigate("PerfilAnfi");
+            }}
+          >
             <S.ImageProfile source={{ uri: serviceProvider.image }} />
             <S.ContentCard>
               <S.Name> {serviceProvider.name}</S.Name>

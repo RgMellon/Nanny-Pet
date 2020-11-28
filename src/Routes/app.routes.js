@@ -1,11 +1,13 @@
 import React from "react";
 
 import { createStackNavigator } from "@react-navigation/stack";
+
 import AppBottonRoutes from "./appBottom.routes";
 
 const Stack = createStackNavigator();
 
-// import { Container } from './styles';
+import CadAnfi from "../pages/CadAnfi";
+import PerfilAnfi from "../pages/PerfilAnfi";
 
 const Routes = () => {
   return (
@@ -17,6 +19,9 @@ const Routes = () => {
           headerShown: false,
         }}
       />
+
+      <Stack.Screen name="CadAnfi" component={CadAnfi} />
+      <Stack.Screen name="PerfilAnfi" component={PerfilAnfi} />
     </Stack.Navigator>
   );
 };
