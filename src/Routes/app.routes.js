@@ -20,8 +20,20 @@ const Routes = () => {
         }}
       />
 
-      <Stack.Screen name="CadAnfi" component={CadAnfi} />
-      <Stack.Screen name="PerfilAnfi" component={PerfilAnfi} />
+      <Stack.Screen
+        name="CadAnfi"
+        options={{
+          headerTitle: "Tornar anfitrião",
+        }}
+        component={CadAnfi}
+      />
+      <Stack.Screen
+        name="PerfilAnfi"
+        options={{
+          headerTitle: "Perfil",
+        }}
+        component={PerfilAnfi}
+      />
     </Stack.Navigator>
   );
 };
