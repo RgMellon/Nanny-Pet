@@ -1,11 +1,15 @@
 import React from "react";
-import { Alert, TextInput } from "react-native";
+import { Alert } from "react-native";
+
+import { useNavigation } from "@react-navigation/native";
 
 import * as S from "./styles";
 
 import Header from "../../components/Header";
 
 const Cadastro = () => {
+  const navigation = useNavigation();
+
   function handleNext() {
     Alert.alert("Cadastrado");
   }
@@ -26,6 +30,14 @@ const Cadastro = () => {
         <S.ButtonNext onPress={handleNext}>
           <S.ButtonNextText> Cadastrar </S.ButtonNextText>
         </S.ButtonNext>
+
+        <S.ButtonGoBack
+          onPress={() => {
+            navigation.navigate("Login");
+          }}
+        >
+          <S.ButtonGoBackText> Voltar para login </S.ButtonGoBackText>
+        </S.ButtonGoBack>
       </S.Content>
     </S.Container>
   );

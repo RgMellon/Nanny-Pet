@@ -65,3 +65,19 @@ export const Detail = styled.View`
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
 `;
+
+export const ButtonGoBack = styled.TouchableOpacity`
+  width: 250px;
+  height: 50px;
+  background: #fff;
+
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+`;
+
+export const ButtonGoBackText = styled.Text`
+  color: #ffc249;
+  font-size: 16px;
+`;

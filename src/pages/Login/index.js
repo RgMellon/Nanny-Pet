@@ -1,12 +1,19 @@
 import React from "react";
 
+import { useNavigation } from "@react-navigation/native";
 import * as S from "./styles";
 
 import Header from "../../components/Header";
 
 const Login = () => {
+  const navigation = useNavigation();
+
   function handleNext() {
     Alert.aler("oi");
+  }
+
+  function handleRedirectToRegister() {
+    navigation.navigate("Cadastro");
   }
 
   return (
@@ -25,7 +32,7 @@ const Login = () => {
       </S.ButtonLogin>
       <S.Content>
         <S.Text> Ainda não tem conta ?</S.Text>
-        <S.Cadastre>
+        <S.Cadastre onPress={handleRedirectToRegister}>
           <S.CadastreText> Cadastre-se </S.CadastreText>
         </S.Cadastre>
       </S.Content>

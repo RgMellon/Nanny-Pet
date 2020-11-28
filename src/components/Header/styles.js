@@ -10,6 +10,6 @@ export const ContentImage = styled.View`
 `;
 
 export const Image = styled.Image`
-  width: 200px;
-  height: 160px;
+  width: 190px;
+  height: 150px;
 `;
