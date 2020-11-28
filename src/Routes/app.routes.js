@@ -13,7 +13,7 @@ const Routes = () => {
   return (
     <Stack.Navigator>
       <Stack.Screen
-        name="Home"
+        name="HomeTabNavigator"
         component={AppBottonRoutes}
         options={{
           headerShown: false,

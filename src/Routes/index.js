@@ -6,7 +6,10 @@ import AppRoutes from "./app.routes";
 // import { Container } from './styles';
 
 const Routes = () => {
-  return <AppRoutes />;
+  //vai no back, vereficia se tem cadastro, se tiver, aqui vem true
+  const user = true;
+
+  return user ? <AppRoutes /> : <AuthRoutes />;
 };
 
 export default Routes;
