@@ -8,6 +8,7 @@ const Stack = createStackNavigator();
 
 import CadAnfi from "../pages/CadAnfi";
 import PerfilAnfi from "../pages/PerfilAnfi";
+import EditPerfil from "../pages/EditPerfil";
 
 const Routes = () => {
   return (
@@ -33,6 +34,13 @@ const Routes = () => {
           headerTitle: "Perfil",
         }}
         component={PerfilAnfi}
+      />
+       <Stack.Screen
+        name="EditPerfil"
+        options={{
+          headerTitle: "Editar Perfil",
+        }}
+        component={EditPerfil}
       />
     </Stack.Navigator>
   );

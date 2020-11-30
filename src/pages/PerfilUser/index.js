@@ -35,7 +35,11 @@ const PerfilUser = () => {
           <FontAwesome5 solid name="angle-right" size={18} color="#FFC249" />
         </S.MenuItem>
 
-        <S.MenuItem>
+        <S.MenuItem 
+           onPress={() => {
+            navigation.navigate("EditPerfil");
+          }}
+        >
           <FontAwesome5 solid name="address-card" size={24} color="#999" />
 
           <S.Info>
