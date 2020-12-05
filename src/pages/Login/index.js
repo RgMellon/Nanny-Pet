@@ -12,7 +12,9 @@ const Login = () => {
     navigation.navigate("HomeTabNavigator");
   }
 
-  function handleRedirectToRegister() {}
+  function handleRedirectToRegister() {
+    navigation.navigate("Cadastro");
+  }
 
   return (
     <S.Container>

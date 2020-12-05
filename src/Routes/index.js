@@ -7,7 +7,7 @@ import AppRoutes from "./app.routes";
 
 const Routes = () => {
   //vai no back, vereficia se tem cadastro, se tiver, aqui vem true
-  const user = true;
+  const user = false;
 
   return user ? <AppRoutes /> : <AuthRoutes />;
 };
